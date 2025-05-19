@@ -74,13 +74,13 @@
       try {
         const numeros = await obterNumeros();
         const numeroAleatorio = numeros[Math.floor(Math.random() * numeros.length)];
-        const url = `https://api.whatsapp.com/send?phone=${numeroAleatorio}&text=Oi,%20quero%20conversar%20com%20voce!`;
+        const url = `https://api.whatsapp.com/send?phone=${numeroAleatorio}&text=Oi,%20quero%20saber%20mais%20sobre%20as%20receitas`;
         console.log('Redirecionando para:', url);
         window.location.href = url;
       } catch (error) {
         console.error('Erro ao obter os números ou redirecionar:', error);
         // URL de fallback em caso de erro
-        window.location.href = 'https://api.whatsapp.com/send?phone=5544998216585&text=Oi,%20tudo%20bem%20gata%20?';
+        window.location.href = 'https://api.whatsapp.com/send?phone=5544998216585&text=Oi,%20tudo%20bem?';
       }
     }
 
@@ -95,7 +95,7 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1199333351345626');
+    fbq('init', 'p');
     fbq('track', 'Pageview');
   </script>
 
