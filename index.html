@@ -74,7 +74,7 @@
       try {
         const numeros = await obterNumeros();
         const numeroAleatorio = numeros[Math.floor(Math.random() * numeros.length)];
-        const url = `https://api.whatsapp.com/send?phone=${numeroAleatorio}&text=Oi,%20quero%20saber%20mais%20sobre%20as%20receitas`;
+        const url = `https://api.whatsapp.com/send?phone=${numeroAleatorio}&text=Oi,%20quero%20conversar%20com%20você`;
         console.log('Redirecionando para:', url);
         window.location.href = url;
       } catch (error) {
@@ -95,7 +95,7 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'p');
+    fbq('init', '1199333351345626');
     fbq('track', 'Pageview');
   </script>
 
